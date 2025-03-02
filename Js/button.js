@@ -40,3 +40,10 @@ handleTaskCompletion('completed-3', 'Optimize Home page ')
 handleTaskCompletion('completed-4', 'Add new emoji')
 handleTaskCompletion('completed-5', 'Integrate OpenAI API')
 handleTaskCompletion('completed-6', 'Improve Job searching')
+
+// Clear History Button Functionality
+document.getElementById('clear-history-btn').addEventListener('click', function () {
+    const container = document.getElementById('clear-history');
+    const logs = container.querySelectorAll('div.bg-gray-100');
+    logs.forEach(log => log.remove());
+  });
